@@ -1,0 +1,51 @@
+/* normalizzo il mio box model creando un selettore * 
+e impostando la proprietà box sizing a border-box*/
+* {
+    box-sizing: border-box;
+}
+
+#gallery img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+}
+
+body {
+    font-family: Arial;
+    margin: 0px;
+    background-color: #EBE7E7;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+    background: #E0DDDD;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25%;
+    justify-content: center;
+    padding: 0 4px;
+}
+
+/*Flexbox is a one-dimensional CSS layout approach that 
+focuses on the flow of content. It offers the ability to control 
+the way items are spaced and aligned within a container.*/
+
+@media (max-width: 800px) {
+    #gallery img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    #gallery img {
+        width: 100%;
+    }
+}
